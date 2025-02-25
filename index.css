@@ -38,7 +38,7 @@ body {
     font-size: 35px;
 }
 
- #address {   padding: 2%;      color: white;     }      .contract-address button {      
+ #address {   padding: 2%;  text-align: center;    color: white;     }      .contract-address button {      
      display: block;       
                                                                        margin: 10px auto 0;     }
 /* about */
