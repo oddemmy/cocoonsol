@@ -93,8 +93,10 @@
         <section id="home" class="home">
             <img class="home-img" src="cocopfp.jpg" alt="">
         </section>
-        <section id="ca" class="contract-address">
-            <h1>CA Coming Soon...</h1>
+        <section id="ca" class="contract-address">   
+            <h1>Contract Address</h1>    
+            <span id="address">6zTwZoFLSvDdSzHV5iBWSejDK1HToZVE2qECjUpfmoon</span>   
+            <button onclick="copyToClipboard()">Copy</button>
         </section>
         <section id="about" class="about">
 
@@ -192,4 +194,7 @@
             nav.classList.remove("show");
         });
     });
+      function copyToClipboard() {   
+          const address = document.getElementById("address").textContent;         navigator.clipboard.writeText(address).then(() => {             alert("Address copied to clipboard!");         }).catch(err => {          
+         console.error("Failed to copy: ", err);         });     }
 </script>
